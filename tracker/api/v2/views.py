@@ -7,6 +7,7 @@ from tracker.models import Stock
 
 def SomeStocksView(request):
     received_json_data = json.loads(request.body.decode("utf-8"))
+    print(received_json_data)
     stocks = list(received_json_data.values())[0]
     res = Stock.objects.filter(jse_code__in=stocks).values()
 
