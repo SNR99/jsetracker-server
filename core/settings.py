@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-6m!jg(b-iv6ua=_^k+t^cbw=!k=e%u_o)8d1pr90crjru#yn(t'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["jse-tracker.herokuapp.com"]
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -82,10 +82,10 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': "dbutgeu70o5omc",
-        'USER': "vcqiqncrnordqy",
-        'PASSWORD': "4014737060b6f1671c3bccb3e7a0f9a56a192234e0706c6ba264446f31148057",
-        'HOST': "ec2-34-234-228-127.compute-1.amazonaws.com",
+        'NAME': "",
+        'USER': "",
+        'PASSWORD': "",
+        'HOST': ",
         'PORT': 5432,
     }
 }
